@@ -87,3 +87,34 @@ The operating point is where the line at an angle of $cos^{-1}(0.5912)$ intersec
 
 ## 3 - Stability Margins using Bode plot
 
+In order to examine the closed loop stability, the equivalent closed loop transfer function need to be derived using the equation. The system is unity feedback so there is no H(s).
+
+$$
+T(s) = 
+\frac{KG(s)}{1+KG(s)}
+$$
+
+$$~~~~~$$
+
+There is a function which does this for you in Octave
+
+```
+sys = feedback(1159344*G, 1);
+```
+
+Then using the Bode function,
+
+```
+bode(sys);
+```
+
+Yields the following plot:
+
+<p align="center">
+  <kbd>
+    <img src="https://raw.githubusercontent.com/keatinl1/Active-Suspension-Controller/main/images/bode.jpg">
+  </kbd>
+</p>
+<p align="center">
+Figure 4: Bode plot of closed-loop system
+</p>
