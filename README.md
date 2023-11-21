@@ -43,8 +43,47 @@ $$
 
 $$~~~~~$$
 
-After substituting in values the transfer function was:
+After substituting in values the transfer function became:
 
 $$
 G(s) = \frac{X_2(s)}{F(s)}= \frac{250s + 4203}{3750s^4 + 8.75 \times 10^4s^3 + 1.572 \times 10^7s^2 + 4.75 \times 10^7s + 7.986 \times 10^8}
 $$
+
+$$~~~~~$$
+
+## 2 - Root Locus
+
+Next root locus was used to determine a suitable gain to set a desireable operating point
+
+<p align="center">
+  <kbd>
+    <img src="https://raw.githubusercontent.com/keatinl1/Active-Suspension-Controller/main/images/root_locus.jpg">
+  </kbd>
+</p>
+<p align="center">
+Figure 2: Root Locus of G(s)
+</p>
+
+An overshoot of 10% is desired for this system, the damping ratio $\zeta$ is found with the following formula
+
+$$~~~~~$$
+
+$$
+ \zeta = \frac{-\ln\left(\frac{PO}{100}\right)}{\sqrt{\pi^2 + \ln^2\left(\frac{PO}{100}\right)}} = \frac{-\ln\left(\frac{10}{100}\right)}{\sqrt{\pi^2 + \ln^2\left(\frac{10}{100}\right)}} = 0.5912
+$$
+
+$$~~~~~$$
+
+<p align="center">
+  <kbd>
+    <img src="https://raw.githubusercontent.com/keatinl1/Active-Suspension-Controller/main/images/gain.jpg">
+  </kbd>
+</p>
+<p align="center">
+Figure 3: Operating point
+</p>
+
+The operating point is where the line at an angle of $cos^{-1}(0.5912)$ intersects the root locus. A gain of 1159344 sets this operating points.
+
+## 3 - Stability Margins using Bode plot
+
