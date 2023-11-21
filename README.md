@@ -39,18 +39,15 @@ $$~~~~~$$
 
 Then Cramers rule was used,
 
-$$X_2(s) = Num / Denom$$
-
-Where: 
-
-$$ Num =  det\left( \begin{matrix} M_1s^2+cs+K_1+K_2 & F(s) \\\ -(cs+K_2) & 0 \end{matrix} \right)$$
-
-$$ Denom = det\left( \begin{matrix} M_1s^2+cs+K_1+K_2 & -(cs+K_2) \\\ -(cs+K_2) & -(M_2s^2+cs+K_2) \end{matrix} \right)$$
+$$
+X_2(s) = 
+\frac{det\left( \begin{matrix} M_1s^2+cs+K_1+K_2 & F(s) \\\ -(cs+K_2) & 0 \end{matrix} \right)}{det\left( \begin{matrix} M_1s^2+cs+K_1+K_2 & -(cs+K_2) \\\ -(cs+K_2) & -(M_2s^2+cs+K_2) \end{matrix} \right)}
+$$
 
 $$~~~~~$$
 
 After substituting in values the transfer function was:
 
 $$
-G(s) = \frac{250s + 4203}{3750s^4 + 8.75 \times 10^4s^3 + 1.572 \times 10^7s^2 + 4.75 \times 10^7s + 7.986 \times 10^8}
+G(s) = \frac{X_2(s)}{F(s)}= \frac{250s + 4203}{3750s^4 + 8.75 \times 10^4s^3 + 1.572 \times 10^7s^2 + 4.75 \times 10^7s + 7.986 \times 10^8}
 $$
