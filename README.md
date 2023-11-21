@@ -83,7 +83,7 @@ $$~~~~~$$
 Figure 3: Operating point
 </p>
 
-The operating point is where the line at an angle of $cos^{-1}(0.3579)$ intersects the root locus. A gain of 377616 sets this operating point.
+The operating point is where the line at an angle of $cos^{-1}(0.3579)$ intersects the root locus. A gain of 376967 sets this operating point.
 
 ## 3 - Stability Margins using Bode plot
 
@@ -99,7 +99,7 @@ $$~~~~~$$
 There is a function which does this for you in Octave
 
 ```
-T = feedback(377616*G, 1);
+T = feedback(376967*G, 1);
 ```
 
 Then using the margins function to display the Bode plot with stability margins overlayed,
@@ -118,3 +118,5 @@ Yields the following plot:
 <p align="center">
 Figure 4: Bode plot of closed-loop system
 </p>
+
+It can be seen that the gain marign is 6dB and the phase margin is 102deg. A compensator would help to make these margins more desireable, a larger gain margin and a smaller phase margin. 
