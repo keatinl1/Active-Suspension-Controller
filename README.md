@@ -99,13 +99,13 @@ $$~~~~~$$
 There is a function which does this for you in Octave
 
 ```
-sys = feedback(1159344*G, 1);
+T = feedback(1159344*G, 1);
 ```
 
 Then using the Bode function,
 
 ```
-bode(sys);
+bode(T);
 ```
 
 Yields the following plot:
