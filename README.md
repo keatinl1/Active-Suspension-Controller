@@ -64,12 +64,12 @@ Next root locus was used to determine a suitable gain to set a desireable operat
 Figure 2: Root Locus of G(s)
 </p>
 
-An overshoot of 20% is desired for this system, the damping ratio $\zeta$ is found with the following formula
+An overshoot of 30% is desired for this system, the damping ratio $\zeta$ is found with the following formula
 
 $$~~~~~$$
 
 $$
- \zeta = \frac{-\ln\left(\frac{PO}{100}\right)}{\sqrt{\pi^2 + \ln^2\left(\frac{PO}{100}\right)}} = \frac{-\ln\left(\frac{20}{100}\right)}{\sqrt{\pi^2 + \ln^2\left(\frac{20}{100}\right)}} = 0.4559
+ \zeta = \frac{-\ln\left(\frac{PO}{100}\right)}{\sqrt{\pi^2 + \ln^2\left(\frac{PO}{100}\right)}} = \frac{-\ln\left(\frac{30}{100}\right)}{\sqrt{\pi^2 + \ln^2\left(\frac{30}{100}\right)}} = 0.3579
 $$
 
 $$~~~~~$$
@@ -83,7 +83,7 @@ $$~~~~~$$
 Figure 3: Operating point
 </p>
 
-The operating point is where the line at an angle of $cos^{-1}(0.4559)$ intersects the root locus. A gain of 682776 sets this operating point.
+The operating point is where the line at an angle of $cos^{-1}(0.3579)$ intersects the root locus. A gain of 377616 sets this operating point.
 
 ## 3 - Stability Margins using Bode plot
 
@@ -99,13 +99,13 @@ $$~~~~~$$
 There is a function which does this for you in Octave
 
 ```
-T = feedback(682776*G, 1);
+T = feedback(377616*G, 1);
 ```
 
-Then using the Bode function,
+Then using the margins function to display the Bode plot with stability margins overlayed,
 
 ```
-bode(T);
+margins(T);
 ```
 
 Yields the following plot:
