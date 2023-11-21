@@ -83,7 +83,7 @@ $$~~~~~$$
 Figure 3: Operating point
 </p>
 
-The operating point is where the line at an angle of $cos^{-1}(0.5912)$ intersects the root locus. A gain of 1159344 sets this operating points.
+The operating point is where the line at an angle of $cos^{-1}(0.5912)$ intersects the root locus. A gain of 1159344 sets this operating point.
 
 ## 3 - Stability Margins using Bode plot
 
