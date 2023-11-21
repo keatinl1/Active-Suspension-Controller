@@ -119,4 +119,4 @@ Yields the following plot:
 Figure 4: Bode plot of closed-loop system
 </p>
 
-It can be seen that the gain marign is 6dB and the phase margin is 102deg. A compensator would help to make these margins more desireable, a larger gain margin and a smaller phase margin. 
+It can be seen that the gain margin is 6dB and the phase margin is 102deg. A compensator would help to make these margins more desireable, a larger gain margin and a smaller phase margin. 
