@@ -83,7 +83,7 @@ $$~~~~~$$
 Figure 3: Operating point
 </p>
 
-The operating point is where the line at an angle of $cos^{-1}(0.4559)$ intersects the root locus. A gain of 682518 sets this operating point.
+The operating point is where the line at an angle of $cos^{-1}(0.4559)$ intersects the root locus. A gain of 682776 sets this operating point.
 
 ## 3 - Stability Margins using Bode plot
 
@@ -99,7 +99,7 @@ $$~~~~~$$
 There is a function which does this for you in Octave
 
 ```
-T = feedback(682518*G, 1);
+T = feedback(682776*G, 1);
 ```
 
 Then using the Bode function,
