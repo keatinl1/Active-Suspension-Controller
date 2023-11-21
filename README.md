@@ -29,11 +29,8 @@ $$~~~~~$$
 
 $$Ax=b$$
 
-$$A = \begin{bmatrix} M_1s^2+cs+K_1+K_2 & -(cs+K_2) \\\ -(cs+K_2) & -(M_2s^2+cs+K_2) \end{bmatrix}$$
+$$\begin{bmatrix} M_1s^2+cs+K_1+K_2 & -(cs+K_2) \\\ -(cs+K_2) & -(M_2s^2+cs+K_2) \end{bmatrix} \begin{bmatrix} X_1(s) \\\ X_2(s) \end{bmatrix} = \begin{bmatrix} F(s) \\\ 0 \end{bmatrix} $$
 
-$$x = \begin{bmatrix} X_1(s) \\\ X_2(s) \end{bmatrix}$$
-
-$$b = \begin{bmatrix} F(s) \\\ 0 \end{bmatrix}$$
 
 $$~~~~~$$
 
